@@ -1,0 +1,12 @@
+.login-button{
+    background-color:var(--button-color) ;
+    padding: 0.3rem;
+    border-radius: var(--button-radius);
+}
+
+.login-button:hover{
+ 
+    color:white;
+   
+
+}
