@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import Header from "./layout/header/header.layout";
+import ChatBox from "./pages/chat-box/chat-box.pages";
 import Login from "./pages/login/login.page";
 import SplashScreen from "./pages/splash-screen/splash-screen.page";
 
@@ -29,9 +31,14 @@ const App = () => {
       {isSplash ? (
         <SplashScreen />
       ) : (
+        <>
+        <Header/>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route exact path="/" element={<Login />} />
+          <Route path="/chat-room" element={<ChatBox />} />
         </Routes>
+        
+        </>
       )}
     </>
   );

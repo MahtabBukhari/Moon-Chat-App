@@ -1,12 +1,13 @@
 import React from 'react'
-import './button.style.css'
+import { Link } from 'react-router-dom'
+
 
 
 const LoginButton = () => {
   return (
-    <div className='login-button'>
-    Login with google
-    </div>
+    <Link to='/chat-room' type="button" className="btn btn-primary btn-sm" data-mdb-ripple-color="dark">
+    
+    Let's Chat</Link>
   )
 }
 

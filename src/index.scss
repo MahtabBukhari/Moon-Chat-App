@@ -1,0 +1,10 @@
+
+$gray-color:#f5f6f7;
+$primary-color:#007bff;
+
+$theme-colors: (
+    "primary":$primary-color,
+    "gray":$gray-color,
+    );
+    
+ @import "node_modules/bootstrap/scss/bootstrap";
